@@ -1,0 +1,10 @@
+This are my settings I tend to pull into my work environments.
+Most importantly, vim settings to get me productive. :-)
+
+Setup when the home is not empty:
+git init .
+git remote add origin https://github.com/maettu/Settings.git
+git pull origin master
+
+Homedir is empty, simply:
+git clone https://github.com/maettu/Settings.git .
