@@ -26,7 +26,7 @@ hi Cursor       cterm=NONE ctermfg=160 ctermbg=184      gui=none guifg=#000000 g
 hi CursorIM     cterm=underline ctermfg=160 ctermbg=184 gui=underline guifg=#000000 guibg=#ffffff
 hi CursorLine   cterm=NONE ctermbg=234                  gui=NONE               guibg=#232323
 hi CursorColumn cterm=NONE ctermbg=234                  gui=NONE               guibg=#232323
-hi CursorLineNr cterm=NONE ctermfg=234 ctermbg=234      gui=NONE guifg=#ffffff guibg=#202020
+hi CursorLineNr cterm=NONE ctermfg=yellow ctermbg=234   gui=NONE guifg=#ffffff guibg=#202020
 
 
 
