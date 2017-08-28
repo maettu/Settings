@@ -44,10 +44,11 @@ hi p6Quote                                              gui=NONE guifg=#ffffff  
 hi p6RxAnchor                                           gui=NONE guifg=#ffffff    guibg=NONE
 hi perlPackageDecl  cterm=NONE ctermfg=75 ctermbg=NONE
 
-hi vimHiGroup                                                     guifg=#86B4CF
-hi vimGroup                                                       guifg=#86B4CF
+hi vimHiGroup       cterm=NONE ctermfg=231 ctermbg=NONE guifg=#86B4CF
+hi vimGroup         cterm=NONE ctermfg=231 ctermbg=NONE guifg=#86B4CF
 hi vimOption        cterm=NONE ctermfg=75 ctermbg=NONE
 hi vimCommentTitle  cterm=NONE ctermfg=25 ctermbg=NONE
+hi vimHiAttrib      cterm=NONE ctermfg=75 ctermbg=NONE
 hi vimHiCTerm       cterm=NONE ctermfg=75 ctermbg=NONE
 hi vimHiCTermFgBg   cterm=NONE ctermfg=75 ctermbg=NONE
 hi vimHiCTermFgBg   cterm=NONE ctermfg=75 ctermbg=NONE
@@ -60,3 +61,8 @@ hi htmlError        cterm=NONE ctermfg=75 ctermbg=NONE
 
 " tabs: annoy the eye on purpose.
 hi Tabs                                ctermbg=17                 guifg=#0B108C   guibg=NONE
+
+hi yamlKeyValueDelimiter        cterm=NONE ctermfg=231 ctermbg=NONE
+hi yamlBlockCollectionItemStart cterm=NONE ctermfg=231 ctermbg=NONE
+hi yamlBool                     cterm=NONE ctermfg=75 ctermbg=NONE
+hi yamlNodeTag                  cterm=NONE ctermfg=75 ctermbg=NONE
