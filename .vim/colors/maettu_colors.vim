@@ -36,8 +36,7 @@ hi String       cterm=NONE ctermfg=231 ctermbg=NONE     gui=NONE guifg=#ffffff g
 hi LineNr       cterm=NONE ctermfg=31  ctermbg=234      gui=NONE guifg=#505050 guibg=#202020
 hi MatchParen   cterm=NONE ctermfg=0   ctermbg=190      gui=NONE guifg=#000000 guibg=#F0C27B
 
-" needs 'reverse' to see TODO when cursor is on line (CursorLine)
-hi Todo                                                 gui=reverse guifg=#B8D0DE guibg=#000000
+hi Todo         cterm=NONE ctermfg=231 ctermbg=NONE
 
 hi perlSpecialString                                    gui=NONE  guifg=#B8D0DE   guibg=#000000
 hi p6VarStorage                                         gui=BOLD guifg=#73A2BD    guibg=NONE
