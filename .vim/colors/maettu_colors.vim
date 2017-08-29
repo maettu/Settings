@@ -19,6 +19,8 @@ hi Identifier   cterm=NONE ctermfg=75  ctermbg=0        gui=NONE guifg=#9FC2D6 g
 hi PreProc      cterm=NONE ctermfg=208 ctermbg=0        gui=NONE guiFG=#49708A guibg=NONE
 hi Number       cterm=NONE ctermfg=231 ctermbg=NONE     gui=NONE guifg=#6792AB guibg=NONE
 
+hi confTodo     cterm=NONE ctermfg=231 ctermbg=NONE
+
 " unsure if I am doing something wrong here but it needs the NONEs or shows yellow background
 hi Search       cterm=reverse ctermfg=NONE ctermbg=NONE gui=reverse guifg=NONE guibg=NONE
 
