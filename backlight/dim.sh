@@ -8,6 +8,7 @@
 # controlls are (Fn-F12 and Fn-F11)
 
 brightness=`pkexec xfpm-power-backlight-helper --get-brightness`
+max_brightness=`xfpm-power-backlight-helper --get-max-brightness`
 
 if [ "$1" == "+" ]; then
     brightness=$((brightness+$2))
@@ -19,8 +20,8 @@ if [ "$brightness" -lt "1" ]; then
     brightness=1
 fi
 
-if [ "$brightness" -gt "1500" ]; then
-    brightness=1500
+if [ "$brightness" -gt "$max_brightness" ]; then
+    brightness=$max_brightness
 fi
 
 `pkexec xfpm-power-backlight-helper --set-brightness $brightness`
