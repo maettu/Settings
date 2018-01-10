@@ -11,12 +11,12 @@ let b_05 = "#49708A"
 
 "~ exe 'hi Comment guibg='b_01'guifg='b_05
 
-hi normal                                               gui=NONE guifg=#ffffff guibg=#000000
-hi Comment      cterm=NONE ctermfg=25 ctermbg=NONE    gui=NONE guifg=#6792AB guibg=NONE
+hi normal       cterm=NONE ctermfg=25  ctermbg=NONE     gui=NONE guifg=#ffffff guibg=#000000
+hi Comment      cterm=NONE ctermfg=25  ctermbg=NONE     gui=NONE guifg=#6792AB guibg=NONE
 hi Statement    cterm=BOLD ctermfg=75  ctermbg=NONE     gui=BOLD guifg=#73A2BD guibg=NONE
-hi Label        cterm=NONE ctermfg=0   ctermbg=190      gui=NONE guifg=#86B4CF guibg=NONE
-hi Identifier   cterm=NONE ctermfg=75  ctermbg=0        gui=NONE guifg=#9FC2D6 guibg=NONE
-hi PreProc      cterm=NONE ctermfg=208 ctermbg=0        gui=NONE guiFG=#49708A guibg=NONE
+hi Label        cterm=NONE ctermfg=25  ctermbg=NONE     gui=NONE guifg=#86B4CF guibg=NONE
+hi Identifier   cterm=NONE ctermfg=75  ctermbg=NONE     gui=NONE guifg=#9FC2D6 guibg=NONE
+hi PreProc      cterm=NONE ctermfg=74  ctermbg=NONE     gui=NONE guiFG=#49708A guibg=NONE
 hi Number       cterm=NONE ctermfg=231 ctermbg=NONE     gui=NONE guifg=#6792AB guibg=NONE
 
 hi confTodo     cterm=NONE ctermfg=231 ctermbg=NONE
@@ -43,19 +43,21 @@ hi p6VarStorage                                         gui=BOLD guifg=#73A2BD  
 hi p6FlowControl                                        gui=BOLD guifg=#73A2BD    guibg=NONE
 hi p6Quote                                              gui=NONE guifg=#ffffff    guibg=NONE
 hi p6RxAnchor                                           gui=NONE guifg=#ffffff    guibg=NONE
-hi perlPackageDecl  cterm=NONE ctermfg=75 ctermbg=NONE
+hi perlPackageDecl  cterm=NONE ctermfg=75  ctermbg=NONE
+hi perlMatch        cterm=NONE ctermfg=231 ctermbg=NONE
+
 
 hi vimHiGroup       cterm=NONE ctermfg=231 ctermbg=NONE guifg=#86B4CF
 hi vimGroup         cterm=NONE ctermfg=231 ctermbg=NONE guifg=#86B4CF
-hi vimOption        cterm=NONE ctermfg=75 ctermbg=NONE
-hi vimCommentTitle  cterm=NONE ctermfg=25 ctermbg=NONE
-hi vimHiAttrib      cterm=NONE ctermfg=75 ctermbg=NONE
-hi vimHiCTerm       cterm=NONE ctermfg=75 ctermbg=NONE
-hi vimHiCTermFgBg   cterm=NONE ctermfg=75 ctermbg=NONE
-hi vimHiCTermFgBg   cterm=NONE ctermfg=75 ctermbg=NONE
-hi vimHiGui         cterm=NONE ctermfg=75 ctermbg=NONE
+hi vimOption        cterm=NONE ctermfg=75  ctermbg=NONE
+hi vimCommentTitle  cterm=NONE ctermfg=25  ctermbg=NONE
+hi vimHiAttrib      cterm=NONE ctermfg=75  ctermbg=NONE
+hi vimHiCTerm       cterm=NONE ctermfg=75  ctermbg=NONE
+hi vimHiCTermFgBg   cterm=NONE ctermfg=75  ctermbg=NONE
+hi vimHiCTermFgBg   cterm=NONE ctermfg=75  ctermbg=NONE
+hi vimHiGui         cterm=NONE ctermfg=75  ctermbg=NONE
 hi vimHiGuiFgBg     cterm=NONE ctermfg=231 ctermbg=NONE
-hi Type                                                           guifg=#86B4CF
+hi Type             cterm=NONE ctermfg=75  ctermbg=NONE  guifg=#86B4CF
 
 hi htmlArg          cterm=NONE ctermfg=75 ctermbg=NONE
 hi htmlError        cterm=NONE ctermfg=75 ctermbg=NONE

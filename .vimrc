@@ -1,6 +1,9 @@
 "vimrc :m)
 "---------
 
+" C-N : completion
+" C-G : file info
+
 " macvim errorbells
 set visualbell
 
@@ -13,12 +16,11 @@ set encoding=utf-8
 set scrolloff=2
 
 " arrows are not needed, use them to switch between tabs
-nmap <S-Left>    gT
-" TODO does not work
-nmap <S-Right>   gt
+nmap <S-h>       gT
+nmap <S-l>       gt
 
 " use space to scroll
-" nmap <Space> <C-D>
+nmap <Space> <C-D>
 
 " syntax highlighting on
 syntax enable
@@ -49,6 +51,8 @@ endif
 
 set t_Co=256
 colorscheme maettu_colors
+nmap csl :colorscheme maettu_colors_light<CR>
+nmap csd :colorscheme maettu_colors<CR>
 
 " tabs
 set tabstop=4      "Tab indentation levels every four columns
@@ -93,7 +97,7 @@ function! <SID>StripTrailingWhitespace()
     let l = line(".")
     let c = col (".")
     let _s = @/  "save last search..
-    " %s/\s\+$//e
+    %s/\s\+$//e
     " had some issues with inserted 'non-breaking space': replace with regular space
     %s/\%xa0/ /e
     call cursor(l,c)
