@@ -2,6 +2,12 @@
 unbind -n F1
 bind-key -n F1 resize-pane -Z
 
+# Shift-F1: instead of showing the keybindings, show status bar
+unbind -n S-F1
+bind-key -n S-F1 set -g status on
+
+unbind -n C-F1
+bind-key -n C-F1 set -g status off
 
 # F2: Make windows, panes.
 

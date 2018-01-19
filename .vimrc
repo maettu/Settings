@@ -80,6 +80,9 @@ function! ShiftLine()
     set smartindent
 endfunction
 
+" json files: tabstops 2 chars
+au FileType json setl sw=2 sts=2 et
+
 " cursor position and ruler
 set number
 set ruler
@@ -220,5 +223,4 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 map ! :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-
 
