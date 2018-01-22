@@ -47,6 +47,9 @@ xkb_symbols "basic" {
     key <AB09> { [     period,      colon                           ] };
     key <AB10> { [      minus, underscore                           ] };
 
+    // (mb) shift-Backspace: Delete
+    key <BKSP> { [      BackSpace,  Delete ] };
+
     include "level3(ralt_switch)"
 };
 
