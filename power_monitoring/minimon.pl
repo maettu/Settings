@@ -1,4 +1,20 @@
 #!/usr/bin/perl
+
+=head1 minimon.pl - monitor some power usage related values
+
+Monitor some values with regard to energy consumption / heat / fan.
+Where possible without root, use tlp for data collection.
+Since tlp should run pretty much everywhere, that is considered favourable.
+
+tlp-stat -b runs fine without root on my laptop, but I guess there will be good
+reasons it requires root. Therefore, get battery information directly from /sys/class.
+
+The script prints the values every 10 seconds.
+
+It does not take any parameters.
+
+=cut
+
 use 5.10.1;
 use strict; use warnings;
 
@@ -31,6 +47,6 @@ while (1){
     printf "%.1f%% %.3s %6.3fA %6.3fV %6.3fW tlp: %.3s ",
             $bat_percentage, $bat_status, $current,$voltage, $watt, $tlp_mode;
 
-    say "cpu: $cpu_temp° fan1: $fan1 fan2: $fan2";
+    say "⚀ $cpu_temp° ❋ $fan1 ❋ $fan2";
     sleep 10;
 }
