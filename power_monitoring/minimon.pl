@@ -12,11 +12,11 @@ while (1){
     my $bat_status = `cat /sys/class/power_supply/BAT0/status`;
     chomp ($bat_percentage);
 
-    my $stat = `pkexec tlp stat -s`;
+    my $stat = `tlp-stat -s`; # works without root
     $stat =~ /Mode.+= (\w+)/m;
     my $tlp_mode = $1;
 
-    my $temp = `pkexec tlp stat -t`; # Too lazy to search in /sys/
+    my $temp = `tlp-stat -t`; # Too lazy to search in /sys/
     $temp =~ /CPU temp.+=\s+(\d+).+\n.+fan1.+=\s+(\d+).+\n.+fan2.+=\s+(\d+)/m;
     my $cpu_temp = $1;
     my $fan1 = $2;
