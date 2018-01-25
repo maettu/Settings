@@ -41,10 +41,10 @@ while (1){
     $current = $current / 1000000;
     $voltage = $voltage / 1000000;
     my $watt = $current*$voltage; # good enough for me
-    printf "%2.2d-%2.2d-%2s %2.2d:%2.2d:%2.2d ",
+    printf "%2.2d-%2.2d-%2s %2.2d:%2.2d:%2.2d  ",
             $year, $mon, $day, $h, $min, $sec;
 
-    printf "%.1f%% %.3s %6.3fA %6.3fV %6.3fW tlp: %.3s ",
+    printf "%.1f%% %.3s  %5.2fA %5.2fV  %6.3fW  tlp: %.3s  ",
             $bat_percentage, $bat_status, $current,$voltage, $watt, $tlp_mode;
 
     say "⚀ $cpu_temp° ❋ $fan1 ❋ $fan2";
