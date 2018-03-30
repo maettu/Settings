@@ -31,8 +31,9 @@ unbind-key -n F11
 bind-key -n F11 select-layout even-vertical
 
 # enable mouse click to switch between tabs / desktops
-set -g mouse on
-unbind-key -n C-s
+# downside: have to use shift-click-mouse-move to highlight text
+# set -g mouse on
+# unbind-key -n C-s
 
 # ctrl-tab to switch between panes
 unbind-key -n Tab
