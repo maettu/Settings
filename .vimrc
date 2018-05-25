@@ -50,7 +50,7 @@ if has("gui_running")
 endif
 
 set t_Co=256
-colorscheme maettu_colors
+colorscheme maettu_colors_light
 nmap csl :colorscheme maettu_colors_light<CR>
 nmap csd :colorscheme maettu_colors<CR>
 
@@ -110,7 +110,7 @@ endfunction
 autocmd Filetype * autocmd BufWritePre <buffer> :call<SID>StripTrailingWhitespace()
 
 " Perl stuff
-inoremap #p<CR> #!/usr/bin/perl<CR>use Modern::Perl;
+inoremap #p<CR> #!/usr/bin/perl<CR>use 5.10.1;<CR>use strict;<CR>use warnings;<CR><CR>
 
 " experimental: when writing 'method' parens and curly block is auto-added
 imap #m method (){<CR>}<UP><RIGHT><RIGHT><RIGHT><RIGHT><RIGHT><RIGHT>

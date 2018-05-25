@@ -1,3 +1,6 @@
 *~
 *.swp
 man/
+.byobu/.ssh*
+.byobu/.metadata_available
+.vim/.netrwhist
