@@ -107,7 +107,7 @@ function! <SID>StripTrailingWhitespace()
     let @/ = _s  "and restore it
 endfunction
 
-# TODO make this a function, not automatic on file write
+" TODO make this a function, not automatic on file write
 autocmd Filetype * autocmd BufWritePre <buffer> :call<SID>StripTrailingWhitespace()
 
 " Perl stuff
