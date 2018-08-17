@@ -1,15 +1,27 @@
-# F1: toggle fullscreen. Need this for copy-paste
+# F1: toggle fullscreen. Resize panes
+# -----------------------------------
+
 unbind -n F1
 bind-key -n F1 resize-pane -Z
 
-# Shift-F1: instead of showing the keybindings, show status bar
+# Shift-F1: instead of showing the keybindings, "maximize" horizontally
 unbind -n S-F1
-bind-key -n S-F1 set -g status on
+bind-key -n S-F1 resize-pane -L 1000 \; resize-pane -R 1000;
 
-unbind -n C-F1
-bind-key -n C-F1 set -g status off
+# toggle status bar
+unbind -n C-S-F1
+bind-key -n C-S-F1 set -g status
+
+bind-key -n M-S-Up resize-pane -U 5
+bind-key -n M-S-Down resize-pane -D 5
+bind-key -n M-S-Left resize-pane -L 5
+bind-key -n M-S-Right resize-pane -R 5
+
+# uhm.. no better way to start external command?
+# bind-key -n C-S-F1 send-keys 'tmux list-windows' ENTER
 
 # F2: Make windows, panes.
+# ------------------------
 
 unbind-key -n F2
 bind-key -n F2 new-window -c "#{pane_current_path}" \; rename-window "-"
