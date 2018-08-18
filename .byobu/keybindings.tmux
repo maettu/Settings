@@ -5,8 +5,14 @@ unbind -n F1
 bind-key -n F1 resize-pane -Z
 
 # Shift-F1: instead of showing the keybindings, "maximize" horizontally
+# bind-key -n S-F1 resize-pane -L 1000 \; resize-pane -R 1000;
+
+# balance evenly:
 unbind -n S-F1
-bind-key -n S-F1 resize-pane -L 1000 \; resize-pane -R 1000;
+bind-key -n S-F1 send-keys 'perl ~/Settings/.byobu/balance_panes.pl R' ENTER
+
+unbind -n C-F1
+bind-key -n C-F1 send-keys 'perl ~/Settings/.byobu/balance_panes.pl U' ENTER
 
 # toggle status bar
 unbind -n C-S-F1
