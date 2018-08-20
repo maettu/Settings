@@ -20,8 +20,8 @@ bind-key -n C-S-F1 set -g status
 
 bind-key -n M-S-Up resize-pane -U 5
 bind-key -n M-S-Down resize-pane -D 5
-bind-key -n M-S-Left resize-pane -L 5
-bind-key -n M-S-Right resize-pane -R 5
+bind-key -n M-S-Left resize-pane -L 10
+bind-key -n M-S-Right resize-pane -R 10
 
 # uhm.. no better way to start external command?
 # bind-key -n C-S-F1 send-keys 'tmux list-windows' ENTER
