@@ -55,7 +55,7 @@ hi htmlArg          cterm=NONE ctermfg=75 ctermbg=NONE
 hi htmlError        cterm=NONE ctermfg=75 ctermbg=NONE
 
 " tabs: annoy the eye on purpose.
-hi Tabs                                ctermbg=17
+hi Tabs                                ctermbg=75
 
 hi yamlKeyValueDelimiter        cterm=NONE ctermfg=17  ctermbg=NONE
 hi yamlBlockCollectionItemStart cterm=NONE ctermfg=17  ctermbg=NONE

@@ -60,7 +60,7 @@ set shiftwidth=4   "Indent/outdent by four columns
 "Convert all tabs that are typed into spaces
 "but don't expand in makefiles..
 let _curfile = expand("%:t")
-if _curfile =~ ".*\.am$" || _curfile =~ ".*\.ac"
+if _curfile =~ ".*\.am$" || _curfile =~ ".*\.ac$"
     set noexpandtab
 else
     set expandtab
