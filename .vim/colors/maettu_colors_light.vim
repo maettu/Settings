@@ -34,6 +34,9 @@ hi MatchParen   cterm=NONE ctermfg=0   ctermbg=190
 
 hi Todo         cterm=NONE ctermfg=17  ctermbg=NONE
 
+hi gitcommitOverflow cterm=NONE ctermfg=1 ctermbg=16
+hi gitcommitBlank    cterm=NONE ctermfg=1 ctermbg=16
+
 hi perlPackageDecl  cterm=NONE ctermfg=17 ctermbg=NONE
 hi perlMatch        cterm=NONE ctermfg=17 ctermbg=NONE
 
