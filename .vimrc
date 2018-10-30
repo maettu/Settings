@@ -50,7 +50,7 @@ if has("gui_running")
 endif
 
 set t_Co=256
-colorscheme maettu_colors_light
+colorscheme maettu_colors
 nmap csl :colorscheme maettu_colors_light<CR>
 nmap csd :colorscheme maettu_colors<CR>
 
