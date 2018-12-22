@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+use 5.10.1;
+use strict;
+use warnings;
+
+
+for my $n (0 .. 255) {
+    print "[38;5;${n}m";
+    printf ("%03d", $n);
+    print " ";
+    print "\n" if $n == 15;
+    if ( $ARGV[0] and $ARGV[0] =~ /w/ ) {
+        print "\n" if $n > 15 and $n % 36 == 15;
+    }
+    else {
+        print "\n" if $n > 15 and $n % 6 == 3;
+    }
+}
+

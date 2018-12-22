@@ -50,9 +50,17 @@ if has("gui_running")
 endif
 
 set t_Co=256
-colorscheme maettu_colors
+colorscheme maettu_colors_dark
 nmap csl :colorscheme maettu_colors_light<CR>
-nmap csd :colorscheme maettu_colors<CR>
+nmap csd :colorscheme maettu_colors_dark<CR>
+
+" use an orange cursor in insert mode
+" let &t_SI = "\<Esc>]12;orange\x7"
+" use a red cursor otherwise
+" let &t_EI = "\<Esc>]12;red\x7"
+" silent !echo -ne "\033]12;red\007"
+" reset cursor when vim exits
+" autocmd VimLeave * silent !echo -ne "\033]112\007"
 
 " tabs
 set tabstop=4      "Tab indentation levels every four columns
@@ -222,6 +230,6 @@ autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 
 " hit ! and show color groups under cursor
 map ! :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+\                 . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\       . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
