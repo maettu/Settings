@@ -4,8 +4,9 @@
 " C-N : completion
 " C-G : file info
 
-" macvim errorbells
+" no bells at all
 set visualbell
+set t_vb=
 
 " enable backspacing everywhere
 set backspace=indent,eol,start
