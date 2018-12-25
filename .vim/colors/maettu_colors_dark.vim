@@ -27,7 +27,7 @@ exe 'hi Special   ' special
 exe 'hi String    ' normal
 exe 'hi Type      ' type
 
-hi Search       cterm=reverse
+hi Search       cterm=reverse ctermfg=NONE ctermbg=NONE
 hi Todo         cterm=reverse
 hi MatchParen   cterm=NONE ctermfg=0   ctermbg=190
 
