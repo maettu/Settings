@@ -17,8 +17,8 @@ set encoding=utf-8
 set scrolloff=2
 
 " arrows are not needed, use them to switch between tabs
-nmap <S-h>       gT
-nmap <S-l>       gt
+nmap <S-h>       gT<C-g>
+nmap <S-l>       gt<C-g>
 
 " use space to scroll
 nmap <Space> <C-D>
