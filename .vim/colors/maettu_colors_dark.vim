@@ -10,7 +10,7 @@ let colors_name = "maettu_colors_dark"
 " below.
 " Note: Have to use `exe 'hi foo' variable_name`
 let comment    = "cterm=NONE ctermfg=249 ctermbg=NONE"
-let identifier = "cterm=NONE ctermfg=255 ctermbg=NONE"
+let identifier = "cterm=NONE ctermfg=229 ctermbg=NONE"
 let normal     = "cterm=NONE ctermfg=255 ctermbg=NONE"
 let special    = "cterm=NONE ctermfg=220 ctermbg=NONE"
 let statement  = "cterm=NONE ctermfg=227 ctermbg=NONE"
@@ -39,6 +39,7 @@ hi LineNr       cterm=NONE ctermfg=255 ctermbg=234
 " tabs: annoy the eye on purpose.
 hi Tabs                                ctermbg=17
 
+exe 'hi Constant ' identifier
 
 
 exe 'hi perlPackageDecl ' statement
