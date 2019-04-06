@@ -27,8 +27,11 @@ exe 'hi Special   ' special
 exe 'hi String    ' normal
 exe 'hi Type      ' type
 
+exe 'hi VimHiGroup' statement
+exe 'hi VimGroup  ' statement
+
 hi Search       cterm=reverse ctermfg=NONE ctermbg=NONE
-hi Todo         cterm=reverse
+hi Todo         cterm=NONE ctermfg=0   ctermbg=249
 hi MatchParen   cterm=NONE ctermfg=0   ctermbg=190
 
 hi CursorLine   cterm=NONE ctermbg=234
