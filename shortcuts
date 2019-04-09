@@ -1,0 +1,15 @@
+byobu
+---
+Alt-1..0: window 1..10
+Alt-Tab: next window
+Alt-b: balance panes side by side
+Alt-B: balance pances top-botton
+Alt-f: resize
+Alt-p: new pane vertically
+Alt-P: new pane horizontally
+Alt-r: rename window
+Alt-s: status bar
+Alt-w: new window
+
+Alt-d: dim down
+Alt-D: dim up
