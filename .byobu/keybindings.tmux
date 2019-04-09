@@ -65,6 +65,8 @@ bind-key -n M-b select-layout even-horizontal
 
 unbind-key -n F11
 bind-key -n F11 select-layout even-vertical
+unbind-key -n M-B
+bind-key -n M-B select-layout even-vertical
 
 # move between windows
 # --------------------
