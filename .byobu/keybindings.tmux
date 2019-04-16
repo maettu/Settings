@@ -110,3 +110,7 @@ set -g prefix ^B
 set -g prefix2 ^B
 bind b send-prefix
 
+# copy tmux copy mode selection to clipboard.
+# I want it in `primary` for mouse-middle-click insert
+#-> set-option -s set-clipboard off
+bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -se primary -i"
