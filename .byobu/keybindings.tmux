@@ -2,6 +2,10 @@
 unbind -n M-R
 bind-key -n M-R source $BYOBU_PREFIX/share/byobu/profiles/tmuxrc
 
+# Detach
+unbind-key M-d
+bind-key -n M-d detach
+
 # F1: toggle fullscreen. Resize panes
 # -----------------------------------
 
@@ -113,7 +117,7 @@ bind b send-prefix
 # copy tmux copy mode selection to clipboard.
 # I want it in `primary` for mouse-middle-click insert
 #-> set-option -s set-clipboard off
-bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -se primary -i"
+#-> bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "xclip -se primary -i"
 
-unbind-key MouseDown2Pane
-bind -T root MouseDown2Pane run -b "xclip -o | tmux load-buffer - && tmux paste-buffer -s ' '"
+#-> unbind-key MouseDown2Pane
+#-> bind -T root MouseDown2Pane run -b "xclip -o | tmux load-buffer - && tmux paste-buffer -s ' '"
