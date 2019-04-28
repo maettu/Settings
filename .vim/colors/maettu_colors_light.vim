@@ -8,6 +8,7 @@ let colors_name = "maettu_colors_light"
 
 hi normal       cterm=NONE ctermfg=17  ctermbg=NONE
 hi Comment      cterm=NONE ctermfg=17  ctermbg=NONE
+hi Constant     cterm=NONE ctermfg=17  ctermbg=NONE
 hi Statement    cterm=BOLD ctermfg=20  ctermbg=NONE
 hi Label        cterm=NONE ctermfg=0   ctermbg=NONE
 hi Identifier   cterm=NONE ctermfg=20  ctermbg=NONE
