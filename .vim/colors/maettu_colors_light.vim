@@ -29,6 +29,7 @@ hi CursorLineNr cterm=NONE      ctermfg=yellow ctermbg=238
 
 hi p6Identifier cterm=NONE      ctermfg=20 ctermbg=NONE
 hi p6Twigil     cterm=NONE      ctermfg=20 ctermbg=NONE
+hi p6Type       cterm=NONE      ctermfg=20 ctermbg=NONE
 
 hi String       cterm=NONE ctermfg=17  ctermbg=NONE
 hi LineNr       cterm=NONE ctermfg=31  ctermbg=253

@@ -48,6 +48,7 @@ exe 'hi Constant ' identifier
 exe 'hi perlPackageDecl ' statement
 exe 'hi perlMatch ' normal
 
+exe 'hi p6Type       ' type
 exe 'hi p6Twigil     ' identifier
 exe 'hi p6Identifier ' statement
 
