@@ -6,11 +6,11 @@ Alt-b: balance panes side by side
 Alt-B: balance pances top-botton
 Alt-D: detach
 Alt-f: resize
+Alt-n: new window
 Alt-p: new pane vertically
 Alt-P: new pane horizontally
 Alt-r: rename window
 Alt-s: status bar
-Alt-w: new window
 
 Alt-y: dim down
 Alt-x: dim up

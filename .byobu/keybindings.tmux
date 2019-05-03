@@ -43,8 +43,8 @@ bind-key -n M-S-Right resize-pane -R 10
 
 unbind-key -n F2
 bind-key -n F2 new-window -c "#{pane_current_path}" \; rename-window "-"
-unbind-key -n M-w
-bind-key -n M-w new-window -c "#{pane_current_path}" \; rename-window "-"
+unbind-key -n M-n
+bind-key -n M-n new-window -c "#{pane_current_path}" \; rename-window "-"
 
 bind-key -n M-r command-prompt -p "(rename-window) " "rename-window '%%'"
 
