@@ -18,11 +18,17 @@ It does not take any parameters.
 use 5.10.1;
 use strict; use warnings;
 
+my $current_now = try_files(
+    '/sys/class/power_supply/BAT0/current_now',
+    '/sys/class/power_supply/BAT0/power_now',
+);
+
+
 while (1){
     my ($sec, $min, $h, $day, $mon, $year) = localtime (time);
     $year +=1900;
     $mon++;
-    my $current = `cat /sys/class/power_supply/BAT0/current_now`;
+    my $current = `cat $current_now`;
     my $voltage = `cat /sys/class/power_supply/BAT0/voltage_now`;
     my $bat_percentage = `cat /sys/class/power_supply/BAT0/capacity`;
     my $bat_status = `cat /sys/class/power_supply/BAT0/status`;
@@ -33,12 +39,16 @@ while (1){
     my $tlp_mode = $1;
 
     my $temp = `tlp-stat -t`; # Too lazy to search in /sys/
-    $temp =~ /CPU temp.+=\s+(\d+).+\n.+fan1.+=\s+(\d+).+\n.+fan2.+=\s+(\d+)/m;
+    $temp =~ /CPU temp.+=\s+(\d+)/;
     my $cpu_temp = $1;
-    my $fan1 = $2;
-    my $fan2 = $3;
+    $temp =~ /.+\n.+fan1.+=\s+(\d+).+\n.+fan2.+=\s+(\d+)/m;
+    my $fan1 = $2 // 'not available';
+    my $fan2 = $3 // 'not available';
 
-    $current = $current / 1000000;
+    say "cpu_temp: $cpu_temp";
+
+    # todo figure ourt current measuring unit
+    $current = $current / 10000000;
     $voltage = $voltage / 1000000;
     my $watt = $current*$voltage; # good enough for me
     printf "%2.2d-%2.2d-%2.2d %2.2d:%2.2d:%2.2d  ",
@@ -49,4 +59,10 @@ while (1){
 
     say "⚀ $cpu_temp° ❋ $fan1 ❋ $fan2";
     sleep 10;
+}
+
+sub try_files {
+    for my $file (@_) {
+        return $file if -f $file
+    }
 }
