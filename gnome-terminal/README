@@ -1,0 +1,7 @@
+dconf dump /org/gnome/terminal/ >settings
+
+(change file etc)
+
+dconf load /org/gnome/terminal/ < settings
+
+open new terminal

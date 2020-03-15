@@ -1,0 +1,61 @@
+[legacy/profiles:/:210d09b8-4a15-4ed5-af47-435629307c72]
+backspace-binding='ascii-backspace'
+scrollbar-policy='never'
+use-system-font=false
+visible-name='white medium'
+font='Screen 15'
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+backspace-binding='ascii-backspace'
+scrollbar-policy='never'
+use-system-font=false
+visible-name='white small'
+font='Screen 12'
+
+[legacy/profiles:/:4998f1bc-8112-4c16-91d7-474c46631cab]
+foreground-color='rgb(255,255,255)'
+visible-name='black medium'
+palette=['rgb(46,52,54)', 'rgb(248,244,92)', 'rgb(145,203,230)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
+backspace-binding='ascii-backspace'
+use-theme-colors=false
+font='Screen 15'
+background-color='rgb(0,0,0)'
+scrollbar-policy='never'
+
+[legacy/profiles:/:c4dd0d85-ff4c-44a4-bd71-953b3ddf865e]
+foreground-color='rgb(255,255,255)'
+visible-name='black small'
+palette=['rgb(46,52,54)', 'rgb(190,209,70)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
+backspace-binding='ascii-backspace'
+use-theme-colors=false
+font='Screen 12'
+background-color='rgb(0,0,0)'
+scrollbar-policy='never'
+
+[legacy/profiles:/:7a8ef6a8-dabe-440a-951a-ad11d5a612b8]
+foreground-color='rgb(255,255,255)'
+visible-name='black big'
+palette=['rgb(46,52,54)', 'rgb(190,209,70)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+use-system-font=false
+backspace-binding='ascii-backspace'
+use-theme-colors=false
+font='Noto Mono 18'
+background-color='rgb(0,0,0)'
+scrollbar-policy='never'
+
+[legacy/profiles:]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'c4dd0d85-ff4c-44a4-bd71-953b3ddf865e', '4998f1bc-8112-4c16-91d7-474c46631cab', '210d09b8-4a15-4ed5-af47-435629307c72', '7a8ef6a8-dabe-440a-951a-ad11d5a612b8', '6b79a7d5-c81c-467e-b9fd-297f34594c2d']
+default='c4dd0d85-ff4c-44a4-bd71-953b3ddf865e'
+
+[legacy/profiles:/:6b79a7d5-c81c-467e-b9fd-297f34594c2d]
+backspace-binding='ascii-backspace'
+scrollbar-policy='never'
+use-system-font=false
+visible-name='white big'
+font='Noto Mono 18'
+
+[legacy]
+schema-version=uint32 3
+default-show-menubar=false

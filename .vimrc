@@ -10,6 +10,8 @@ set t_vb=
 
 " enable backspacing everywhere
 set backspace=indent,eol,start
+" enable left/right over newlines
+set whichwrap+=<,>,h,l,[,]
 
 set encoding=utf-8
 

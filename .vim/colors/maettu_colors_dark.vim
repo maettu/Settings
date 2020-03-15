@@ -31,7 +31,7 @@ exe 'hi VimHiGroup' statement
 exe 'hi VimGroup  ' statement
 
 hi Search       cterm=reverse ctermfg=NONE ctermbg=NONE
-hi Todo         cterm=NONE ctermfg=0   ctermbg=249
+hi Todo         cterm=NONE ctermfg=249   ctermbg=0
 hi MatchParen   cterm=NONE ctermfg=0   ctermbg=190
 
 hi CursorLine   cterm=NONE ctermbg=234
@@ -47,6 +47,7 @@ exe 'hi Constant ' identifier
 
 exe 'hi perlPackageDecl ' statement
 exe 'hi perlMatch ' normal
+exe 'hi perlSubPrototypeError' identifier
 
 exe 'hi p6Type       ' type
 exe 'hi p6Twigil     ' identifier
@@ -62,4 +63,3 @@ exe 'hi yamlKeyValueDelimiter        ' special
 exe 'hi yamlBlockCollectionItemStart ' special
 exe 'hi yamlBool                     ' type
 exe 'hi yamlNodeTag                  ' special
-
