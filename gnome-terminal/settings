@@ -15,7 +15,7 @@ font='Screen 12'
 [legacy/profiles:/:4998f1bc-8112-4c16-91d7-474c46631cab]
 foreground-color='rgb(255,255,255)'
 visible-name='black medium'
-palette=['rgb(46,52,54)', 'rgb(248,244,92)', 'rgb(145,203,230)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+palette=['rgb(46,52,54)', 'rgb(248,244,92)', 'rgb(145,203,230)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(247,233,73)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-system-font=false
 backspace-binding='ascii-backspace'
 use-theme-colors=false
@@ -26,7 +26,7 @@ scrollbar-policy='never'
 [legacy/profiles:/:c4dd0d85-ff4c-44a4-bd71-953b3ddf865e]
 foreground-color='rgb(255,255,255)'
 visible-name='black small'
-palette=['rgb(46,52,54)', 'rgb(190,209,70)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+palette=['rgb(46,52,54)', 'rgb(248,244,92)', 'rgb(145,203,230)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(247,233,73)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-system-font=false
 backspace-binding='ascii-backspace'
 use-theme-colors=false
@@ -37,7 +37,7 @@ scrollbar-policy='never'
 [legacy/profiles:/:7a8ef6a8-dabe-440a-951a-ad11d5a612b8]
 foreground-color='rgb(255,255,255)'
 visible-name='black big'
-palette=['rgb(46,52,54)', 'rgb(190,209,70)', 'rgb(78,154,6)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
+palette=['rgb(46,52,54)', 'rgb(248,244,92)', 'rgb(145,203,230)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(233,250,76)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(247,233,73)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
 use-system-font=false
 backspace-binding='ascii-backspace'
 use-theme-colors=false
