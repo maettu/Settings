@@ -53,6 +53,8 @@ exe 'hi p6Type       ' type
 exe 'hi p6Twigil     ' identifier
 exe 'hi p6Identifier ' statement
 
+exe 'hi phpType      ' type
+
 exe 'hi vimOption      ' identifier
 exe 'hi vimHiAttrib    ' identifier
 exe 'hi vimHiCTerm     ' statement
