@@ -35,6 +35,7 @@ hi CursorLineNr cterm=NONE ctermfg=yellow ctermbg=234   gui=NONE guifg=#ffffff g
 hi String       cterm=NONE ctermfg=231 ctermbg=NONE     gui=NONE guifg=#ffffff guibg=#000000
 hi LineNr       cterm=NONE ctermfg=31  ctermbg=234      gui=NONE guifg=#505050 guibg=#202020
 hi MatchParen   cterm=NONE ctermfg=0   ctermbg=190      gui=NONE guifg=#000000 guibg=#F0C27B
+hi SpellBad     cterm=underline ctermfg=NONE ctermbg=NONE
 
 hi Todo         cterm=NONE ctermfg=231 ctermbg=NONE
 

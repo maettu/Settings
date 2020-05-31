@@ -30,9 +30,10 @@ exe 'hi Type      ' type
 exe 'hi VimHiGroup' statement
 exe 'hi VimGroup  ' statement
 
-hi Search       cterm=reverse ctermfg=NONE ctermbg=NONE
-hi Todo         cterm=NONE ctermfg=249   ctermbg=0
-hi MatchParen   cterm=NONE ctermfg=0   ctermbg=190
+hi Search       cterm=reverse   ctermfg=NONE ctermbg=NONE
+hi Todo         cterm=NONE      ctermfg=249  ctermbg=0
+hi MatchParen   cterm=NONE      ctermfg=0    ctermbg=190
+hi SpellBad     cterm=underline ctermfg=NONE ctermbg=NONE
 
 hi CursorLine   cterm=NONE ctermbg=234
 hi CursorColumn cterm=NONE ctermbg=234

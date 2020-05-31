@@ -4,6 +4,8 @@
 " C-N : completion
 " C-G : file info
 
+set spell
+
 " no bells at all
 set visualbell
 set t_vb=
@@ -15,12 +17,21 @@ set whichwrap+=<,>,h,l,[,]
 
 set encoding=utf-8
 
+set splitright
+set splitbelow
+
 " Scroll when 2 lines from top/bottom
 set scrolloff=2
 
 " arrows are not needed, use them to switch between tabs
 nmap <S-h>       gT<C-g>
 nmap <S-l>       gt<C-g>
+
+" move between splits
+nmap <C-h>       <C-w>h
+nmap <C-l>       <C-w>l
+nmap <C-j>       <C-w>j
+nmap <C-k>       <C-w>k
 
 " use space to scroll
 nmap <Space> <C-D>
