@@ -42,13 +42,11 @@ while (1){
     $temp =~ /CPU temp.+=\s+(\d+)/;
     my $cpu_temp = $1;
     $temp =~ /.+\n.+fan1.+=\s+(\d+).+\n.+fan2.+=\s+(\d+)/m;
-    my $fan1 = $2 // 'not available';
-    my $fan2 = $3 // 'not available';
+    my $fan1 = $1 // 'not available';
+    my $fan2 = $2 // 'not available';
 
-    say "cpu_temp: $cpu_temp";
-
-    # todo figure ourt current measuring unit
     $current = $current / 10000000;
+    $current *= 10 if $current < 1; # so such super-efficient laptop..
     $voltage = $voltage / 1000000;
     my $watt = $current*$voltage; # good enough for me
     printf "%2.2d-%2.2d-%2.2d %2.2d:%2.2d:%2.2d  ",
