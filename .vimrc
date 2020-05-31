@@ -17,21 +17,28 @@ set whichwrap+=<,>,h,l,[,]
 
 set encoding=utf-8
 
+" splits
+" ------
 set splitright
 set splitbelow
 
-" Scroll when 2 lines from top/bottom
-set scrolloff=2
-
-" arrows are not needed, use them to switch between tabs
-nmap <S-h>       gT<C-g>
-nmap <S-l>       gt<C-g>
-
-" move between splits
+" ctrl-moves to switch between splits
 nmap <C-h>       <C-w>h
 nmap <C-l>       <C-w>l
 nmap <C-j>       <C-w>j
 nmap <C-k>       <C-w>k
+
+" ctrl  to resize splits, only make bigger, vertically, then horizontally
+" really just out of ideas, currently :-)
+nmap <C-n>     <C-w>5+
+nmap <C-m>     <C-w>5>
+
+" Scroll when 2 lines from top/bottom
+set scrolloff=2
+
+" shift-moves to switch between tabs (and ctrl-g to show filename :-)
+nmap <S-h>       gT<C-g>
+nmap <S-l>       gt<C-g>
 
 " use space to scroll
 nmap <Space> <C-D>
