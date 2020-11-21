@@ -45,8 +45,8 @@ while (1){
     my $fan1 = $1 // 'not available';
     my $fan2 = $2 // 'not available';
 
-    $current = $current / 10000000;
-    $current *= 10 if $current < 1; # so such super-efficient laptop..
+    $current = $current / 100000000;
+    $current *= 10 if $current < 1; # no such super-efficient laptop..
     $voltage = $voltage / 1000000;
     my $watt = $current*$voltage; # good enough for me
     printf "%2.2d-%2.2d-%2.2d %2.2d:%2.2d:%2.2d  ",
