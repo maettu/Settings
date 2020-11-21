@@ -15,6 +15,7 @@ let normal     = "cterm=NONE ctermfg=255 ctermbg=NONE"
 let special    = "cterm=NONE ctermfg=220 ctermbg=NONE"
 let statement  = "cterm=NONE ctermfg=227 ctermbg=NONE"
 let type       = "cterm=NONE ctermfg=186 ctermbg=NONE"
+let error      = "cterm=NONE ctermfg=255 ctermbg=NONE"
 
 exe 'hi Normal    ' normal
 exe 'hi Comment   ' comment
@@ -26,6 +27,7 @@ exe 'hi Number    ' normal
 exe 'hi Special   ' special
 exe 'hi String    ' normal
 exe 'hi Type      ' type
+exe 'hi Error     ' error
 
 exe 'hi VimHiGroup' statement
 exe 'hi VimGroup  ' statement
@@ -39,6 +41,7 @@ hi CursorLine   cterm=NONE ctermbg=234
 hi CursorColumn cterm=NONE ctermbg=234
 hi CursorLineNr cterm=NONE ctermfg=016 ctermbg=250
 hi LineNr       cterm=NONE ctermfg=255 ctermbg=234
+hi ColorColumn  cterm=NONE ctermfg=255 ctermbg=234
 
 " tabs: annoy the eye on purpose.
 hi Tabs                                ctermbg=17

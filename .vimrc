@@ -1,6 +1,11 @@
 "vimrc :m)
 "---------
 
+"~ syn match Oddlines "^.*$" contains=ALL nextgroup=Evenlines skipnl
+"~ syn match Evenlines "^.*$" contains=ALL nextgroup=Oddlines skipnl
+"~ hi OddLines     cterm=NONE ctermbg=234
+"~ hi Evenlines ctermbg=magenta guibg=#FFCCFF
+
 " C-N : completion
 " C-G : file info
 
@@ -118,6 +123,7 @@ set ruler
 " cursor crosshair
 set cursorline
 set cursorcolumn
+set colorcolumn=100
 
 " show (trailing) whitespace
 match Tabs /\t/
@@ -165,7 +171,8 @@ inoremap ü<CR> [<CR>]<Esc>O
 " mouse support
 " set mouse=a
 " turn off mouse support due to copy-paste issues in tmux etc
-set mouse=
+set ttymouse=xterm2
+set mouse=a
 
 set foldmethod=indent       "fold on indent..
 set foldlevel =20           "open all folds when opening a file
