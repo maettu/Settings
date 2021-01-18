@@ -69,3 +69,5 @@ exe 'hi yamlKeyValueDelimiter        ' special
 exe 'hi yamlBlockCollectionItemStart ' special
 exe 'hi yamlBool                     ' type
 exe 'hi yamlNodeTag                  ' special
+
+exe 'hi ErrorMsg' statement
