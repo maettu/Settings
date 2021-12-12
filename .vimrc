@@ -39,7 +39,7 @@ nmap <C-n>     <C-w>5+
 nmap <C-m>     <C-w>5>
 
 " Scroll when 2 lines from top/bottom
-set scrolloff=2
+set scrolloff=8
 
 " shift-moves to switch between tabs (and ctrl-g to show filename :-)
 nmap <S-h>       gT<C-g>
@@ -146,11 +146,9 @@ endfunction
 autocmd Filetype * autocmd BufWritePre <buffer> :call<SID>StripTrailingWhitespace()
 
 " Perl stuff
-inoremap #p<CR> #!/usr/bin/perl<CR>use 5.10.1;<CR>use strict;<CR>use warnings;<CR><CR>
-
-" experimental: when writing 'method' parens and curly block is auto-added
-imap #m method (){<CR>}<UP><RIGHT><RIGHT><RIGHT><RIGHT><RIGHT><RIGHT>
-
+inoremap #p<CR> #!/usr/bin/perl<CR>use v5.28;<CR>use strict;<CR>use warnings;<CR><CR>
+inoremap #md<CR> use Mojo::Util 'dumper';<CR>$self->log->debug("", dumper);<CR><UP><C-o>$<LEFT><LEFT>
+inoremap #sld<CR> $self->log->debug("");<LEFT><LEFT><LEFT>
 
 " shortcuts. I am using a Swiss german keyboard which has curlies and brakets in uncomfy places.
 " But I do have äöü (which I never use for programming which happens in English).
