@@ -1,0 +1,123 @@
+# Reload config: ctrl-shift-f5
+
+# Fonts
+# BEGIN_KITTY_FONTS
+font_family      family="Ubuntu Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
+font_size 15
+# TODO move to alt; I think alt+- / alt+1, and use something else for "new tab"
+map alt++ change_font_size all +1
+map alt+- change_font_size all -1
+
+enable_audio_bell no
+
+# new panes ("windows") (stack needed for fullscreen, see below
+enabled_layouts splits,stack
+
+map alt+p launch --location=vsplit
+map alt+shift+p launch --location=hsplit
+# TODO needed? Or just open another Terminal in another desktop?
+#-> map alt+1 launch --type tab
+
+# resize panes
+map alt+n       resize_window narrower
+map alt+shift+n resize_window narrower 5
+map alt+w       resize_window wider
+map alt+shift+w resize_window wider 5
+
+map alt+t       resize_window taller
+map alt+shift+t resize_window taller 5
+map alt+s       resize_window shorter
+map alt+shift+s resize_window shorter 5
+
+# fullscreen current pane
+map alt+f toggle_layout stack
+
+# jump between panes
+map alt+right neighboring_window right
+map alt+left  neighboring_window left
+map alt+up    neighboring_window up
+map alt+down  neighboring_window down
+
+# (re-)organize panes
+map alt+shift+right move_window right
+map alt+shift+left  move_window left
+map alt+shift+up    move_window up
+map alt+shift+down  move_window down
+
+# editor /usr/local/bin/nvim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
