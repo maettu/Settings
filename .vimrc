@@ -9,6 +9,8 @@
 " C-N : completion
 " C-G : file info
 
+let g:codeium_enabled = 0
+
 set spell
 
 " no bells at all
@@ -62,17 +64,17 @@ set incsearch
 
 " colorscheme
 if has("gui_running")
-    " macvim does its own style of definition..
-    set guifont=Ubuntu\ Mono:h22
-    " X11 style:
-    " set guifont=Ubuntu\ Mono\ 17
-    " turn off menu, toolbar, and scrollbar
-    set go-=T
-    set go-=r
-    set go-=l
-    set go-=m
-    " stop cursor from blinking
-    set guicursor=a:blinkon0
+" macvim does its own style of definition..
+set guifont=Ubuntu\ Mono:h22
+" X11 style:
+" set guifont=Ubuntu\ Mono\ 17
+" turn off menu, toolbar, and scrollbar
+set go-=T
+set go-=r
+set go-=l
+set go-=m
+" stop cursor from blinking
+set guicursor=a:blinkon0
 endif
 
 set t_Co=256
@@ -114,8 +116,9 @@ function! ShiftLine()
     set smartindent
 endfunction
 
-" json files: tabstops 2 chars
-au FileType json setl sw=2 sts=2 et
+" json, yaml, html, vue.. files: tabstops 2 chars
+" Curiously, this only works after a vim restart.
+au FileType json,javascript,vue,html,yaml setl sw=2 sts=2 et
 
 " cursor position and ruler
 set number
@@ -147,8 +150,8 @@ autocmd Filetype * autocmd BufWritePre <buffer> :call<SID>StripTrailingWhitespac
 
 " Perl stuff
 inoremap #p<CR> #!/usr/bin/perl<CR>use v5.28;<CR>use strict;<CR>use warnings;<CR><CR>
-inoremap #md<CR> use Mojo::Util 'dumper';<CR>$self->log->debug("", dumper);<CR><UP><C-o>$<LEFT><LEFT>
-inoremap #sld<CR> $self->log->debug("");<LEFT><LEFT><LEFT>
+inoremap #md<CR> use Mojo::Util 'dumper';<CR>$self->app->log->debug("", dumper);<CR><UP><C-o>$<LEFT><LEFT>
+inoremap #sld<CR> $self->app->log->debug("");<LEFT><LEFT><LEFT>
 
 " shortcuts. I am using a Swiss german keyboard which has curlies and brakets in uncomfy places.
 " But I do have äöü (which I never use for programming which happens in English).
@@ -164,7 +167,7 @@ inoremap ü<space> []
 " open a new block and edit inside
 inoremap ö<CR> (<CR>);<Esc>O<space><space><space><space>
 inoremap ä<CR> {<CR>}<Esc>O
-inoremap ü<CR> [<CR>]<Esc>O
+inoremap ü<CR> [<CR>]<Esc>O<space><space><space><space>
 
 " mouse support
 " set mouse=a
@@ -212,7 +215,7 @@ imap <C-V> <C-O>"+gP<CR>
 autocmd BufNewFile,BufRead * let b:cmt = exists('b:cmt') ? b:cmt : '#->'
 autocmd FileType *sh,awk,python,perl,perl6,ruby,yaml let b:cmt = exists('b:cmt') ? b:cmt : '#\~'
 autocmd FileType vim let b:cmt = exists('b:cmt') ? b:cmt : '"\~'
-autocmd FileType c,cpp,javascript  let b:cmt = exists('b:cmt') ? b:cmt : '\/\/\~'
+autocmd FileType c,cpp,javascript,vue  let b:cmt = exists('b:cmt') ? b:cmt : '\/\/\~'
 
 function! Block_comment(comment)
     "let comment = a:comment
