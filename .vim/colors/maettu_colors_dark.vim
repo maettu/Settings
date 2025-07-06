@@ -18,6 +18,7 @@ let type       = "cterm=NONE ctermfg=186 ctermbg=NONE"
 let error      = "cterm=NONE ctermfg=255 ctermbg=NONE"
 
 exe 'hi Normal    ' normal
+exe 'hi Title     ' normal
 exe 'hi Comment   ' comment
 exe 'hi Statement ' statement
 exe 'hi Label     ' normal
@@ -71,3 +72,6 @@ exe 'hi yamlBool                     ' type
 exe 'hi yamlNodeTag                  ' special
 
 exe 'hi ErrorMsg' statement
+
+
+exe 'hi htmlLink' normal

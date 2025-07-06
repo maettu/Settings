@@ -1,18 +1,41 @@
 # Reload config: ctrl-shift-f5
 
+# TODO border color
+#   kitten themes, but meh..
+# TODO install&choose font (no need for nerd fonts)
+# (programmingfonts.org)
+
+# TODO change font (Screen / noto usw) oder Font wählen, der für beides gut geht)
+# Auf dem grossen Screen ist FreeMono nicht so gut
+
 # Fonts
+
 # BEGIN_KITTY_FONTS
-font_family      family="Ubuntu Mono"
+font_family      family=Scr13 postscript_name=Scr13
 bold_font        auto
 italic_font      auto
 bold_italic_font auto
 # END_KITTY_FONTS
+
+profile screen_medium
+  font_size 13
+# font_family Scr13
+
 font_size 15
+# Make bigger than 100% if more vertical space between lines desired
+adjust_line_height 100%
+
+# Turn off cursor flashing with 0
+cursor_blink_interval 0
+
 # TODO move to alt; I think alt+- / alt+1, and use something else for "new tab"
 map alt++ change_font_size all +1
 map alt+- change_font_size all -1
 
 enable_audio_bell no
+
+# Padding around text in panes / windows.
+window_padding_width 0
 
 # new panes ("windows") (stack needed for fullscreen, see below
 enabled_layouts splits,stack
