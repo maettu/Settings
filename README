@@ -8,3 +8,11 @@ git pull origin master
 
 Homedir is empty, simply:
 git clone https://github.com/maettu/Settings.git .
+
+xkb:
+----
+sudo mv /usr/share/X11/xkb/symbols/ch /usr/share/X11/xkb/symbols/ch-original
+sudo ln -s /home/ti/daten/Settings/xkb/ch /usr/share/X11/xkb/symbols/ch
+sudo rm /var/lib/xkb/*.xkm
+
+(Am besten geht es mit dem Editieren im alt-F1, damit man das File offen lassen kann beim logout-login auf X)
